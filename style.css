@@ -1,0 +1,99 @@
+/* 
+External CSS
+Learned from YouTube "HTML & CSS Full Course"
+Using alignment, repetition, contrast principles
+*/
+
+body {
+    font-family: Arial, sans-serif; /* required font family */
+    margin: 0;
+    background-image: url("images/dumbbells.jpg"); /* background image requirement */
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+}
+
+/* ID selector example */
+#main-content {
+    background-color: rgba(255,255,255,0.95);
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 10px;
+    max-width: 1000px;  /* This fixes the stretching issue */
+}
+
+
+/* Navigation */
+nav {
+    background-color: #111;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: square; /* different bullet style */
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Current page indicator */
+.active {
+    border-bottom: 2px solid #2e8b57;
+}
+
+/* Class selector example */
+.highlight {
+    color: #2e8b57;
+    font-weight: bold;
+}
+
+/* Floated image */
+.float-img {
+    float: right;
+    margin: 10px;
+    width: 250px;
+}
+
+/* Newspaper column requirement */
+.columns {
+    column-count: 2;
+    column-gap: 30px;
+    text-align: justify;
+}
+
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
