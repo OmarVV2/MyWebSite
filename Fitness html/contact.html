@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beginner Fitness | Contact</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Contact Us</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="workouts.html">Workouts</a></li>
+        <li><a href="nutrition.html">Nutrition</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+</nav>
+
+<main id="main-content">
+<p>
+    If you have any questions about fitness, nutrition, or getting started,
+    feel free to reach out using the form below.
+</p>
+    <h2>Contact Form</h2>
+
+
+    <!-- FORM -->
+    <form action="#" method="get">
+
+    <!-- NAME -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <!-- EMAIL -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <!-- GENDER GROUP -->
+    <label>Gender:</label>
+    <div class="radio-group">
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+    </div>
+
+    <!-- FITNESS LEVEL -->
+    <label for="level">Fitness Level:</label>
+    <select id="level" name="level">
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+    </select>
+
+    <input type="submit" value="Submit">
+</form>
+
+    <!-- MAP -->
+    <iframe
+        src="https://www.google.com/maps?q=Sligo,Ireland&output=embed"
+        width="100%" height="300">
+    </iframe>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Beginner Fitness</p>
+</footer>
+
+</body>
+</html>
