@@ -1,36 +1,56 @@
-/* 
-External CSS
-Learned from YouTube "HTML & CSS Full Course"
-Using alignment, repetition, contrast principles
-*/
+/* Fix radio buttons layout */
+.radio-group {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+/* Make page take full height */
+html, body {
+    height: 100%;
+}
 
+/* Flex layout to push footer down */
 body {
-    font-family: Arial, sans-serif; /* required font family */
-    margin: 0;
-    background-image: url("images/dumbbells.jpg"); /* background image requirement */
-    background-size: cover;
-    background-attachment: fixed;
-    color: #333;
+    display: flex;
+    flex-direction: column;
 }
 
-/* ID selector example */
+/* Main grows to fill space */
 #main-content {
-    background-color: rgba(255,255,255,0.95);
-    padding: 20px;
-    margin: 40px auto;
-    border-radius: 10px;
-    max-width: 1000px;  /* This fixes the stretching issue */
+    flex: 1;
+}
+/* GLOBAL */
+body {
+    font-family: Arial;
+    margin: 0;
+    background: url("images/dumbbells.jpg");
+    background-size: cover;
 }
 
+/* MAIN BOX */
+#main-content {
+    background: white;
+    padding: 25px;
+    margin: 40px auto;
+    max-width: 1000px;
+    border-radius: 10px;
+}
 
-/* Navigation */
+/* HEADER */
+header {
+    background: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* NAV */
 nav {
-    background-color: #111;
+    background: #111;
     padding: 15px;
 }
 
 nav ul {
-    list-style-type: square; /* different bullet style */
     text-align: center;
     padding: 0;
 }
@@ -40,38 +60,28 @@ nav ul li {
     margin: 0 15px;
 }
 
-nav ul li a {
+nav a {
     color: white;
     text-decoration: none;
 }
 
-/* Current page indicator */
 .active {
-    border-bottom: 2px solid #2e8b57;
+    border-bottom: 2px solid green;
 }
 
-/* Class selector example */
-.highlight {
-    color: #2e8b57;
-    font-weight: bold;
-}
-
-/* Floated image */
+/* IMAGE */
 .float-img {
     float: right;
-    margin: 10px;
     width: 250px;
+    margin: 10px;
 }
 
-/* Newspaper column requirement */
+/* COLUMNS */
 .columns {
-    column-count: 2;
-    column-gap: 30px;
-    text-align: justify;
+    column-width: 300px;
 }
 
-
-/* Table styling */
+/* TABLE */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -79,21 +89,24 @@ table {
 
 table, th, td {
     border: 1px solid black;
-    padding: 8px;
+    padding: 10px;
 }
 
-/* Footer */
+/* FORM */
+form {
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+}
+
+/* FOOTER */
 footer {
-    background-color: #111;
+    background: #111;
     color: white;
     text-align: center;
-    padding: 15px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
+    padding: 10px;
 }
